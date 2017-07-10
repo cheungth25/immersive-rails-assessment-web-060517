@@ -13,7 +13,7 @@ class GuestsController < ApplicationController
   end
 
   def create
-     @guest = Guest.create(episode_params)
+     @guest = Guest.create(episode_params(:name, :occupation))
      redirect_to @guest
   end
 
