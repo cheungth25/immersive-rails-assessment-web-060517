@@ -1,0 +1,6 @@
+<h1>Couldn't find your guest, you can create a new one... Form</h1>
+<%=  form_for @guest do |f|%>
+  <p> Guest Name: <%= f.text_field :name%></p>
+  <p> Guest Occupation: <%= f.text_field :occupation%></p>
+<%= f.submit%>
+<% end %>

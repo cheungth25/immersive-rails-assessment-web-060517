@@ -1,0 +1,7 @@
+<h1>Who Came To My Show:</h1>
+<h3>Episode Number: <%= @episode.number%></h3>
+<h3>Episode Date: <%= @episode.date%></h3>
+
+<% @episode.guests.each do |guest| %>
+  <p> Guest Name: <%= guest.name %></p>
+<% end %>

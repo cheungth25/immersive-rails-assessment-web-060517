@@ -1,0 +1,7 @@
+<h1>Appearance Form</h1>
+<%=  form_for @appearance do |f|%>
+  <p> Guest Name: <%= f.text_field :guest_id%></p>
+  <p> Episode Number: <%= f.text_field :episode_id%></p>
+  <p> Rating(enter 1-5): <%=f.text_field :rating%></p>
+<%= f.submit%>
+<% end %>
